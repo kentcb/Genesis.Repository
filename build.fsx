@@ -78,7 +78,7 @@ Target "Build" (fun _ ->
 
 Target "ExecuteUnitTests" (fun _ ->
     // NCrunch needs the x86 binary because it's running within VS, whereas we will need to the x64 binary when running from command line
-    CopyFile (srcDir @@ projectName + ".UnitTests/bin" @@ configuration @@ "net45" @@ "sqlite3.dll") (libDir @@ "sqlite3_x64.dll")
+    //CopyFile (srcDir @@ projectName + ".UnitTests/bin" @@ configuration @@ "net45" @@ "sqlite3.dll") (libDir @@ "sqlite3_x64.dll")
 
     xUnit2 (fun p ->
         { p with
