@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Genesis.Repository</id>
+    <version>@build.number@</version>
+    <authors>Kent Boogaart</authors>
+    <owners>Kent Boogaart</owners>
+    <licenseUrl>https://github.com/kentcb/Genesis.Repository/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kentcb/Genesis.Repository</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/kentcb/Genesis.Repository/master/Art/Logo64x64.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Genesis.Repository is a library that makes it simpler to implement database repositories, particularly within a mobile application.
+    </description>
+    <tags>.NET mono portable pcl ios android xamarin helper</tags>
+    @dependencies@
+    @references@
+  </metadata>
+</package>
