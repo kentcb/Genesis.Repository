@@ -1,4 +1,4 @@
-namespace Genesis.Repository.UnitTests.Mocks
+﻿namespace Genesis.Repository.UnitTests.Mocks
 {
     using System.Collections.Generic;
     using System.Collections.Immutable;

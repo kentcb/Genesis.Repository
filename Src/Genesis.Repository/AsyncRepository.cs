@@ -195,9 +195,10 @@ namespace Genesis.Repository
                     () =>
                         Observable
                             .Start(
-                                () => this
-                                    .repository
-                                    .SaveAll(entitiesList),
+                                () =>
+                                    this
+                                        .repository
+                                        .SaveAll(entitiesList),
                             this.dataStoreScheduler))
                 .Do(
                     savedEntities =>
