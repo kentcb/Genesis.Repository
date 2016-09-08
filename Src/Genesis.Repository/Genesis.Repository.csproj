@@ -53,6 +53,7 @@
     <Compile Include="Repository.cs" />
     <Compile Include="SQLitePCL\pretty\ResultSetValueExtensions.cs" />
     <Compile Include="SortOrder.cs" />
+    <Compile Include="System\DateTimeExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Genesis.Ensure, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">

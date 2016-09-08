@@ -1,8 +1,8 @@
 namespace Genesis.Repository.UnitTests.Builders
 {
-    using System.Reactive.Concurrency;
-    using System.Reactive.Concurrency.Mocks;
     using global::Genesis.Util;
+    using global::System.Reactive.Concurrency;
+    using global::System.Reactive.Concurrency.Mocks;
     using PCLMock;
 
     public sealed class AsyncRepositoryBuilder : IBuilder

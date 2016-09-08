@@ -1,7 +1,7 @@
 namespace Genesis.Repository.UnitTests
 {
-    using System.Linq;
     using Builders;
+    using global::System.Linq;
     using Xunit;
 
     public sealed class RepositoryFixture

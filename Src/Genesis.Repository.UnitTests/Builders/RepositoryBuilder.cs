@@ -1,9 +1,9 @@
 namespace Genesis.Repository.UnitTests.Builders
 {
-    using System;
-    using System.Collections.Generic;
     using global::Genesis.Util;
     using global::SQLitePCL.pretty;
+    using global::System;
+    using global::System.Collections.Generic;
 
     public sealed class RepositoryBuilder : IBuilder
     {

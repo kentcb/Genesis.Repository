@@ -1,7 +1,7 @@
 namespace Genesis.Repository.UnitTests.Builders
 {
-    using System.Collections.Generic;
     using global::SQLitePCL.pretty;
+    using global::System.Collections.Generic;
 
     public sealed class TestEntity : IEntity<int>
     {

@@ -1,7 +1,7 @@
 ﻿namespace Genesis.Repository.UnitTests.Mocks
 {
-    using System.Collections.Generic;
-    using System.Collections.Immutable;
+    using global::System.Collections.Generic;
+    using global::System.Collections.Immutable;
     using PCLMock;
 
     partial class RepositoryMock<TId, TEntity>

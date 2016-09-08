@@ -1,11 +1,11 @@
 namespace Genesis.Repository.UnitTests
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.Immutable;
-    using System.Reactive.Concurrency;
-    using System.Reactive.Linq;
     using Builders;
+    using global::System;
+    using global::System.Collections.Generic;
+    using global::System.Collections.Immutable;
+    using global::System.Reactive.Concurrency;
+    using global::System.Reactive.Linq;
     using Microsoft.Reactive.Testing;
     using Mocks;
     using PCLMock;
