@@ -64,7 +64,16 @@ namespace Genesis.Repository
         private readonly ItemChangeType type;
         private readonly T item;
 
-        internal ItemChange(ItemChangeType type, T item)
+        /// <summary>
+        /// Creates a new instance of this class.
+        /// </summary>
+        /// <param name="type">
+        /// The change type.
+        /// </param>
+        /// <param name="item">
+        /// The item.
+        /// </param>
+        protected internal ItemChange(ItemChangeType type, T item)
         {
             this.type = type;
             this.item = item;
