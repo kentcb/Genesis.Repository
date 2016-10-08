@@ -13,7 +13,7 @@ namespace Genesis.Repository.UnitTests.Builders
         private Func<IReadOnlyList<IResultSetValue>, TestEntity> valuesToEntity;
         private Func<TestEntity, IEnumerable<object>> entityToValues;
         private Func<TestEntity, IDatabaseConnection, TestEntity> onEntityLoaded;
-        private Action<TestEntity, IDatabaseConnection> onEntitySaving;
+        private Func<TestEntity, IDatabaseConnection, TestEntity> onEntitySaving;
         private Func<TestEntity, IDatabaseConnection, TestEntity> onEntitySaved;
         private Action<int?, IDatabaseConnection> onEntityDeleted;
 
@@ -31,7 +31,7 @@ namespace Genesis.Repository.UnitTests.Builders
             this.valuesToEntity = resultSet => new TestEntity(resultSet);
             this.entityToValues = entity => new object[] { entity.Id, entity.Column1, entity.Column2 };
             this.onEntityLoaded = (entity, connection) => entity;
-            this.onEntitySaving = (entity, connection) => { };
+            this.onEntitySaving = (entity, connection) => entity;
             this.onEntitySaved = (entity, connection) =>
             {
                 entity.Id = (int)connection.LastInsertedRowId;
@@ -66,7 +66,7 @@ CREATE TABLE test
         public RepositoryBuilder WithOnEntityLoaded(Func<TestEntity, IDatabaseConnection, TestEntity> onEntityLoaded) =>
             this.With(ref this.onEntityLoaded, onEntityLoaded);
 
-        public RepositoryBuilder WithOnEntitySaving(Action<TestEntity, IDatabaseConnection> onEntitySaving) =>
+        public RepositoryBuilder WithOnEntitySaving(Func<TestEntity, IDatabaseConnection, TestEntity> onEntitySaving) =>
             this.With(ref this.onEntitySaving, onEntitySaving);
 
         public RepositoryBuilder WithOnEntitySaved(Func<TestEntity, IDatabaseConnection, TestEntity> onEntitySaved) =>
@@ -97,7 +97,7 @@ CREATE TABLE test
             private readonly Func<IReadOnlyList<IResultSetValue>, TestEntity> valuesToEntity;
             private readonly Func<TestEntity, IEnumerable<object>> entityToValues;
             private readonly Func<TestEntity, IDatabaseConnection, TestEntity> onEntityLoaded;
-            private readonly Action<TestEntity, IDatabaseConnection> onEntitySaving;
+            private readonly Func<TestEntity, IDatabaseConnection, TestEntity> onEntitySaving;
             private readonly Func<TestEntity, IDatabaseConnection, TestEntity> onEntitySaved;
             private readonly Action<int?, IDatabaseConnection> onEntityDeleted;
 
@@ -108,7 +108,7 @@ CREATE TABLE test
                 Func<IReadOnlyList<IResultSetValue>, TestEntity> valuesToEntity,
                 Func<TestEntity, IEnumerable<object>> entityToValues,
                 Func<TestEntity, IDatabaseConnection, TestEntity> onEntityLoaded,
-                Action<TestEntity, IDatabaseConnection> onEntitySaving,
+                Func<TestEntity, IDatabaseConnection, TestEntity> onEntitySaving,
                 Func<TestEntity, IDatabaseConnection, TestEntity> onEntitySaved,
                 Action<int?, IDatabaseConnection> onEntityDeleted)
                 : base(connection)
@@ -136,7 +136,7 @@ CREATE TABLE test
             protected override TestEntity OnEntityLoaded(TestEntity entity, IDatabaseConnection connection) =>
                 this.onEntityLoaded(entity, connection);
 
-            protected override void OnEntitySaving(TestEntity entity, IDatabaseConnection connection) =>
+            protected override TestEntity OnEntitySaving(TestEntity entity, IDatabaseConnection connection) =>
                 this.onEntitySaving(entity, connection);
 
             protected override TestEntity OnEntitySaved(TestEntity entity, IDatabaseConnection connection) =>

@@ -227,7 +227,7 @@ namespace Genesis.Repository
                 .EnsureRunInTransaction(
                     _ =>
                     {
-                        this.OnEntitySaving(entity, this.connection);
+                        entity = this.OnEntitySaving(entity, this.connection);
 
                         var columnValues = this.EntityToValues(entity);
                         this
@@ -350,7 +350,7 @@ namespace Genesis.Repository
         /// <remarks>
         /// <para>
         /// Subclasses can override this method to make adjustments to the entity prior to it being saved, such as updating a timestamp. By default, this
-        /// method does nothing.
+        /// method simply returns the existing entity.
         /// </para>
         /// </remarks>
         /// <param name="entity">
@@ -359,9 +359,11 @@ namespace Genesis.Repository
         /// <param name="connection">
         /// The database connection with which the entity is being saved.
         /// </param>
-        protected virtual void OnEntitySaving(TEntity entity, IDatabaseConnection connection)
-        {
-        }
+        /// <returns>
+        /// The entity to save.
+        /// </returns>
+        protected virtual TEntity OnEntitySaving(TEntity entity, IDatabaseConnection connection) =>
+            entity;
 
         /// <summary>
         /// Called when an entity has been saved.
@@ -378,6 +380,9 @@ namespace Genesis.Repository
         /// <param name="connection">
         /// The database connection with which the entity is being saved.
         /// </param>
+        /// <returns>
+        /// The entity to pass back to callers.
+        /// </returns>
         protected abstract TEntity OnEntitySaved(TEntity entity, IDatabaseConnection connection);
 
         /// <summary>

@@ -242,7 +242,12 @@ namespace Genesis.Repository.UnitTests
         {
             var called = false;
             var sut = new RepositoryBuilder()
-                .WithOnEntitySaving((e, c) => called = true)
+                .WithOnEntitySaving(
+                    (e, c) =>
+                    {
+                        called = true;
+                        return e;
+                    })
                 .Build();
             sut
                 .Save(
@@ -252,6 +257,25 @@ namespace Genesis.Repository.UnitTests
                     });
 
             Assert.True(called);
+        }
+
+        [Fact]
+        public void save_saves_the_entity_returned_to_it_by_on_entity_saving()
+        {
+            var sut = new RepositoryBuilder()
+                .WithOnEntitySaving((e, c) => new TestEntity { Id = 42, Column1 = "replacement" })
+                .Build();
+            sut
+                .Save(
+                    new TestEntity
+                    {
+                        Id = 42,
+                        Column1 = "original"
+                    });
+            var result = sut.Get(42);
+
+            Assert.NotNull(result);
+            Assert.Equal("replacement", result.Column1);
         }
 
         [Fact]
