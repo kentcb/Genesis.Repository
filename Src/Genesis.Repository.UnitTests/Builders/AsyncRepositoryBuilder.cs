@@ -1,6 +1,6 @@
 namespace Genesis.Repository.UnitTests.Builders
 {
-    using global::Genesis.Util;
+    using Genesis.TestUtil;
     using global::System.Reactive.Concurrency;
     using global::System.Reactive.Concurrency.Mocks;
     using PCLMock;

@@ -97,12 +97,12 @@ namespace Genesis.Repository.UnitTests.Mocks
             return this.Apply(x => x.SaveAll(entities));
         }
 
-        public System.Boolean Delete(TId id)
+        public global::System.Boolean Delete(TId id)
         {
             return this.Apply(x => x.Delete(id));
         }
 
-        public System.Int32 DeleteAll()
+        public global::System.Int32 DeleteAll()
         {
             return this.Apply(x => x.DeleteAll());
         }
@@ -129,128 +129,49 @@ namespace Genesis.Repository.UnitTests.Mocks
 [PCLMock.CodeGeneration.Models.Configuration] [Info] Attempting to resolve plugin from type name 'PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony, PCLMock.CodeGeneration'.
 [PCLMock.CodeGeneration.Models.Configuration] [Info] Attempting to resolve plugin from type name 'PCLMock.CodeGeneration.Plugins.Disposables, PCLMock.CodeGeneration'.
 [PCLMock.CodeGeneration.Generator] [Debug] Compilation generated for project 'Genesis.Repository' with references:
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Genesis.Ensure.1.0.3-alpha\lib\portable+net45+win+wp80+MonoTouch10+MonoAndroid10+xamarinmac20+xamarintvos10+xamarinwatchos10+netcoreapp+win8+wpa8.1+wp8+monoandroid403+xamarinios10\Genesis.Ensure.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Genesis.Join.1.0.0-alpha\lib\portable+net45+netcoreapp+win8+wpa8.1+wp8+monoandroid403+xamarinios10\Genesis.Join.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\mscorlib.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\SQLitePCL.pretty.1.0.0\lib\portable-net45+netcore45+wpa81+wp8\SQLitePCL.pretty.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\SQLitePCL.raw.0.8.2\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Rx-Core.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Core.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Rx-Interfaces.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Interfaces.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Rx-Linq.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Linq.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Rx-PlatformServices.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.PlatformServices.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\Microsoft.CSharp.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Collections.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.ComponentModel.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.ComponentModel.EventBasedAsync.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Core.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Diagnostics.Contracts.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Diagnostics.Debug.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Diagnostics.Tools.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Dynamic.Runtime.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Globalization.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.IO.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Linq.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Linq.Expressions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Linq.Queryable.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Net.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Net.NetworkInformation.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Net.Primitives.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Net.Requests.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.ObjectModel.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Reflection.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Reflection.Extensions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Reflection.Primitives.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Resources.ResourceManager.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Extensions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.InteropServices.WindowsRuntime.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Serialization.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Serialization.Json.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Serialization.Primitives.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Serialization.Xml.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Security.Principal.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.ServiceModel.Web.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Text.Encoding.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Text.Encoding.Extensions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Text.RegularExpressions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Threading.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Threading.Tasks.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Windows.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.Linq.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.ReaderWriter.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.Serialization.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.XDocument.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.XmlSerializer.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\genesis.ensure\2.0.0\lib\netstandard1.0\Genesis.Ensure.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\genesis.join\2.0.0\lib\netstandard1.0\Genesis.Join.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\sqlitepcl.pretty\1.0.0\lib\portable-net45+netcore45+wpa81+wp8\SQLitePCL.pretty.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\sqlitepcl.raw\0.8.2\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.collections\4.3.0\ref\netstandard1.0\System.Collections.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.collections.immutable\1.2.0\lib\netstandard1.0\System.Collections.Immutable.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.componentmodel\4.0.1\ref\netstandard1.0\System.ComponentModel.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.diagnostics.debug\4.3.0\ref\netstandard1.0\System.Diagnostics.Debug.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.diagnostics.tools\4.3.0\ref\netstandard1.0\System.Diagnostics.Tools.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.dynamic.runtime\4.0.11\ref\netstandard1.0\System.Dynamic.Runtime.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.globalization\4.3.0\ref\netstandard1.0\System.Globalization.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.io\4.3.0\ref\netstandard1.0\System.IO.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.linq\4.3.0\ref\netstandard1.0\System.Linq.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.linq.expressions\4.3.0\ref\netstandard1.0\System.Linq.Expressions.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.net.primitives\4.3.0\ref\netstandard1.0\System.Net.Primitives.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.objectmodel\4.3.0\ref\netstandard1.0\System.ObjectModel.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.reactive.core\3.0.0\lib\netstandard1.0\System.Reactive.Core.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.reactive.interfaces\3.0.0\lib\netstandard1.0\System.Reactive.Interfaces.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.reactive.linq\3.0.0\lib\netstandard1.0\System.Reactive.Linq.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.reactive.platformservices\3.0.0\lib\netstandard1.0\System.Reactive.PlatformServices.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.reflection\4.3.0\ref\netstandard1.0\System.Reflection.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.reflection.extensions\4.3.0\ref\netstandard1.0\System.Reflection.Extensions.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.reflection.primitives\4.3.0\ref\netstandard1.0\System.Reflection.Primitives.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.resources.resourcemanager\4.3.0\ref\netstandard1.0\System.Resources.ResourceManager.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.runtime\4.3.0\ref\netstandard1.0\System.Runtime.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.runtime.extensions\4.3.0\ref\netstandard1.0\System.Runtime.Extensions.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.runtime.interopservices.windowsruntime\4.0.1\ref\netstandard1.0\System.Runtime.InteropServices.WindowsRuntime.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.text.encoding\4.3.0\ref\netstandard1.0\System.Text.Encoding.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.text.encoding.extensions\4.3.0\ref\netstandard1.0\System.Text.Encoding.Extensions.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.text.regularexpressions\4.3.0\ref\netstandard1.0\System.Text.RegularExpressions.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.threading\4.3.0\ref\netstandard1.0\System.Threading.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.threading.tasks\4.3.0\ref\netstandard1.0\System.Threading.Tasks.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.xml.readerwriter\4.3.0\ref\netstandard1.0\System.Xml.ReaderWriter.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\.nuget\packages\system.xml.xdocument\4.3.0\ref\netstandard1.0\System.Xml.XDocument.dll
 [PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\PCLMock.CodeGeneration.T4.5.0.1-alpha\tools\PCLMock.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Xamarin\Xamarin\4.1.2.18\System.Reactive.Linq.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Xamarin\Xamarin\4.1.2.18\System.Reactive.Core.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Xamarin.VisualStudio\System.Reactive.Linq.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Xamarin.VisualStudio\System.Reactive.Core.dll
 [PCLMock.CodeGeneration.Generator] [Debug] Compilation generated for project 'Genesis.Repository.UnitTests' with references:
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Genesis.TestUtil.1.0.3-alpha\lib\portable+net45+netcoreapp+win8+wpa8.1+wp8+monoandroid403+xamarinios10\Genesis.TestUtil.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\mscorlib.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\PCLMock.5.0.1-alpha\lib\portable-win+net40+sl50+WindowsPhoneApp81+wp80+MonoAndroid+Xamarin.iOS10+MonoTouch\PCLMock.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\SQLitePCL.pretty.1.0.0\lib\portable-net45+netcore45+wpa81+wp8\SQLitePCL.pretty.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\SQLitePCL.raw.0.8.2\lib\net45\SQLitePCL.raw.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Rx-Core.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Core.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Rx-Interfaces.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Interfaces.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Rx-Linq.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Linq.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\Rx-PlatformServices.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.PlatformServices.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\xunit.abstractions.2.0.0\lib\portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS\xunit.abstractions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\xunit.assert.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.assert.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\xunit.extensibility.core.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.core.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\xunit.extensibility.execution.2.1.0\lib\portable-net45+win8+wp8+wpa81\xunit.execution.dotnet.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\Microsoft.CSharp.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Collections.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.ComponentModel.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.ComponentModel.EventBasedAsync.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Core.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Diagnostics.Contracts.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Diagnostics.Debug.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Diagnostics.Tools.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Dynamic.Runtime.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Globalization.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.IO.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Linq.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Linq.Expressions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Linq.Queryable.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Net.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Net.NetworkInformation.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Net.Primitives.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Net.Requests.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.ObjectModel.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Reflection.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Reflection.Extensions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Reflection.Primitives.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Resources.ResourceManager.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Extensions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.InteropServices.WindowsRuntime.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Serialization.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Serialization.Json.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Serialization.Primitives.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Runtime.Serialization.Xml.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Security.Principal.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.ServiceModel.Web.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Text.Encoding.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Text.Encoding.Extensions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Text.RegularExpressions.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Threading.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Threading.Tasks.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Windows.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.Linq.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.ReaderWriter.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.Serialization.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.XDocument.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259\System.Xml.XmlSerializer.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
 [PCLMock.CodeGeneration.Generator] [Debug] - Genesis.Repository
 [PCLMock.CodeGeneration.Generator] [Debug] - C:\Users\Kent\Repository\Genesis.Repository\Src\packages\PCLMock.CodeGeneration.T4.5.0.1-alpha\tools\PCLMock.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Xamarin\Xamarin\4.1.2.18\System.Reactive.Linq.dll
-[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Xamarin\Xamarin\4.1.2.18\System.Reactive.Core.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Xamarin.VisualStudio\System.Reactive.Linq.dll
+[PCLMock.CodeGeneration.Generator] [Debug] - C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Xamarin.VisualStudio\System.Reactive.Core.dll
 [PCLMock.CodeGeneration.Models.Configuration] [Info] Determining inclusivity of interface: 'Genesis.Repository.IEntity<TId>, Genesis.Repository'.
 [PCLMock.CodeGeneration.Models.Configuration] [Debug]  - after inclusion filter 'Genesis\.Repository\..*', it is included.
 [PCLMock.CodeGeneration.Models.Configuration] [Positive] 'Genesis.Repository.IEntity<TId>, Genesis.Repository' has been included.
@@ -268,7 +189,7 @@ namespace Genesis.Repository.UnitTests.Mocks
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IEntity<TId>.Id'.
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IEntity<TId>.Id' because it does not return a Task or Task<T>.
 [PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IEntity<TId>.Id'.
-[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IEntity<TId>.Id' because it does not return IObservable<T>.
+[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Warn] Failed to resolve System.Reactive.Linq.Observable.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Considering symbol 'Genesis.Repository.IEntity<TId>.Id'.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Ignoring symbol '{0}' because its return type is not IDisposable.
 [PCLMock.CodeGeneration.Plugins.Collections] [Debug] Considering symbol 'Genesis.Repository.IEntity<TId>.Id.get'.
@@ -303,7 +224,7 @@ namespace Genesis.Repository.UnitTests.Mocks
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.GetAll()'.
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.GetAll()' because it does not return a Task or Task<T>.
 [PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.GetAll()'.
-[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.GetAll()' because it does not return IObservable<T>.
+[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Warn] Failed to resolve System.Reactive.Linq.Observable.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.GetAll()'.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Ignoring symbol '{0}' because its return type is not IDisposable.
 [PCLMock.CodeGeneration.Plugins.Collections] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.Save(TEntity)'.
@@ -318,14 +239,14 @@ namespace Genesis.Repository.UnitTests.Mocks
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(System.Collections.Generic.IEnumerable<TEntity>)'.
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(System.Collections.Generic.IEnumerable<TEntity>)' because it does not return a Task or Task<T>.
 [PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(System.Collections.Generic.IEnumerable<TEntity>)'.
-[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(System.Collections.Generic.IEnumerable<TEntity>)' because it does not return IObservable<T>.
+[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Warn] Failed to resolve System.Reactive.Linq.Observable.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(System.Collections.Generic.IEnumerable<TEntity>)'.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Ignoring symbol '{0}' because its return type is not IDisposable.
 [PCLMock.CodeGeneration.Plugins.Collections] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(params TEntity[])'.
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(params TEntity[])'.
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(params TEntity[])' because it does not return a Task or Task<T>.
 [PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(params TEntity[])'.
-[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(params TEntity[])' because it does not return IObservable<T>.
+[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Warn] Failed to resolve System.Reactive.Linq.Observable.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.SaveAll(params TEntity[])'.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Ignoring symbol '{0}' because its return type is not IDisposable.
 [PCLMock.CodeGeneration.Plugins.Collections] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.Delete(TId)'.
@@ -333,7 +254,7 @@ namespace Genesis.Repository.UnitTests.Mocks
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.Delete(TId)'.
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.Delete(TId)' because it does not return a Task or Task<T>.
 [PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.Delete(TId)'.
-[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.Delete(TId)' because it does not return IObservable<T>.
+[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Warn] Failed to resolve System.Reactive.Linq.Observable.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.Delete(TId)'.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Ignoring symbol '{0}' because its return type is not IDisposable.
 [PCLMock.CodeGeneration.Plugins.Collections] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.DeleteAll()'.
@@ -341,7 +262,7 @@ namespace Genesis.Repository.UnitTests.Mocks
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.DeleteAll()'.
 [PCLMock.CodeGeneration.Plugins.TaskBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.DeleteAll()' because it does not return a Task or Task<T>.
 [PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.DeleteAll()'.
-[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Debug] Ignoring symbol 'Genesis.Repository.IRepository<TId, TEntity>.DeleteAll()' because it does not return IObservable<T>.
+[PCLMock.CodeGeneration.Plugins.ObservableBasedAsynchrony] [Warn] Failed to resolve System.Reactive.Linq.Observable.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Considering symbol 'Genesis.Repository.IRepository<TId, TEntity>.DeleteAll()'.
 [PCLMock.CodeGeneration.Plugins.Disposables] [Debug] Ignoring symbol '{0}' because its return type is not IDisposable.
 

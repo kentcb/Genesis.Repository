@@ -1,6 +1,6 @@
 namespace Genesis.Repository.UnitTests.Builders
 {
-    using global::Genesis.Util;
+    using Genesis.TestUtil;
     using global::SQLitePCL.pretty;
     using global::System;
     using global::System.Collections.Generic;
