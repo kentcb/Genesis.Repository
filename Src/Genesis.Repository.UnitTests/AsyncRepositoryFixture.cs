@@ -11,7 +11,7 @@ namespace Genesis.Repository.UnitTests
     using PCLMock;
     using Xunit;
 
-    public sealed class AsyncRepositoryFixture
+    public sealed class AsyncRepositoryFixture : IClassFixture<SQLite>
     {
         [Fact]
         public void future_items_ticks_any_items_added_after_the_subscription()
@@ -30,13 +30,13 @@ namespace Genesis.Repository.UnitTests
                 .FutureItems
                 .Subscribe(futureItems.Add);
 
-            Assert.Equal(0, futureItems.Count);
+            Assert.Empty(futureItems);
 
             sut
                 .Save(new TestEntity())
                 .Subscribe();
 
-            Assert.Equal(1, futureItems.Count);
+            Assert.Single(futureItems);
             Assert.Equal(ItemChangeType.Add, futureItems[0].Type);
         }
 
@@ -57,13 +57,13 @@ namespace Genesis.Repository.UnitTests
                 .FutureItems
                 .Subscribe(futureItems.Add);
 
-            Assert.Equal(0, futureItems.Count);
+            Assert.Empty(futureItems);
 
             sut
                 .Save(new TestEntity { Id = 42 })
                 .Subscribe();
 
-            Assert.Equal(1, futureItems.Count);
+            Assert.Single(futureItems);
             Assert.Equal(ItemChangeType.Update, futureItems[0].Type);
         }
 
@@ -87,13 +87,13 @@ namespace Genesis.Repository.UnitTests
                 .FutureItems
                 .Subscribe(futureItems.Add);
 
-            Assert.Equal(0, futureItems.Count);
+            Assert.Empty(futureItems);
 
             sut
                 .Delete(42)
                 .Subscribe();
 
-            Assert.Equal(1, futureItems.Count);
+            Assert.Single(futureItems);
             Assert.Equal(ItemChangeType.Remove, futureItems[0].Type);
         }
 
@@ -158,13 +158,13 @@ namespace Genesis.Repository.UnitTests
                 .Items
                 .Subscribe(items.Add);
 
-            Assert.Equal(0, items.Count);
+            Assert.Empty(items);
 
             sut
                 .Save(new TestEntity())
                 .Subscribe();
 
-            Assert.Equal(1, items.Count);
+            Assert.Single(items);
             Assert.Equal(ItemChangeType.Add, items[0].Type);
         }
 
@@ -185,13 +185,13 @@ namespace Genesis.Repository.UnitTests
                 .Items
                 .Subscribe(items.Add);
 
-            Assert.Equal(0, items.Count);
+            Assert.Empty(items);
 
             sut
                 .Save(new TestEntity { Id = 42 })
                 .Subscribe();
 
-            Assert.Equal(1, items.Count);
+            Assert.Single(items);
             Assert.Equal(ItemChangeType.Update, items[0].Type);
         }
 
@@ -215,13 +215,13 @@ namespace Genesis.Repository.UnitTests
                 .Items
                 .Subscribe(items.Add);
 
-            Assert.Equal(0, items.Count);
+            Assert.Empty(items);
 
             sut
                 .Delete(42)
                 .Subscribe();
 
-            Assert.Equal(1, items.Count);
+            Assert.Single(items);
             Assert.Equal(ItemChangeType.Remove, items[0].Type);
         }
 

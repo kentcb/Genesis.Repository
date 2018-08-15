@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Version>1.0.0</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Kent Boogaart</Authors>
@@ -13,11 +13,6 @@
     <PackageTags>.NET mono portable pcl ios android xamarin helper</PackageTags>
     <Description>Genesis.Repository is a library that makes it simpler to implement database repositories, particularly within a mobile application.</Description>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-
-    <!--
-    see https://github.com/dotnet/corefx/issues/9788
-    -->
-    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81</PackageTargetFallback>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,10 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Collections.Immutable" Version="1.2.0" />
-    <PackageReference Include="System.Reactive" Version="3.0.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="[1.2.0,)" />
+    <PackageReference Include="System.Reactive" Version="[4.0.0,)" />
     <PackageReference Include="Genesis.Ensure" Version="2.0.0" />
     <PackageReference Include="Genesis.Join" Version="2.0.0" />
-    <PackageReference Include="SQLitePCL.pretty" Version="1.0.0" />
+    <PackageReference Include="SQLitePCL.pretty" Version="1.1.0" />
   </ItemGroup>
 </Project>

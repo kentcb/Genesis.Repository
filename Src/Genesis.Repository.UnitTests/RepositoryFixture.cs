@@ -4,7 +4,7 @@ namespace Genesis.Repository.UnitTests
     using global::System.Linq;
     using Xunit;
 
-    public sealed class RepositoryFixture
+    public sealed class RepositoryFixture : IClassFixture<SQLite>
     {
         [Theory]
         [InlineData(1)]
