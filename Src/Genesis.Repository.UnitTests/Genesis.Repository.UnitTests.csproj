@@ -14,14 +14,13 @@
     <PackageReference Include="System.Reactive" Version="[4.0.0,)" />
     <PackageReference Include="Genesis.TestUtil" Version="3.0.0" />
     <PackageReference Include="PCLMock.CodeGeneration.T4" Version="5.0.4-alpha" />
-    <PackageReference Include="SQLitePCL.pretty" Version="1.1.0" />
     <PackageReference Include="SQLitePCLRaw.bundle_green" Version="1.1.11" />
     <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Genesis.Repository\Genesis.Repository.csproj" />
-    <DotNetCliToolReference Include="dotnet-xunit" Version="2.4.0-beta.1.build3958" />
   </ItemGroup>
 
   <ItemGroup>
